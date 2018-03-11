@@ -5,6 +5,7 @@ allow init debugfs:dir mounton;
 allow init emmcblk_device:blk_file rw_file_perms;
 
 allow init block_device:lnk_file { setattr };
+allow init tmpfs:lnk_file create;
 allow init tmpfs:lnk_file create_file_perms;
 
 # /data
